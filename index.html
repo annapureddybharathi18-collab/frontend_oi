@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
 <style>
-/* ── Reset & Tokens ─────────────────────────────────────────── */
+/* ── Reset & Tokens ── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --ink:#0A0A0F;
@@ -39,7 +39,7 @@ img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 button{cursor:pointer;font-family:inherit;border:none;background:none}
 
-/* ── Utility ─────────────────────────────────────────────────── */
+/* ── Utility ── */
 .container{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,4vw,60px)}
 .section{padding-block:clamp(80px,10vw,140px)}
 .section-sm{padding-block:clamp(48px,6vw,80px)}
@@ -52,11 +52,11 @@ h3{font-size:clamp(1.25rem,2.5vw,1.75rem);font-weight:600;letter-spacing:-.02em}
 p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;font-weight:300}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 
-/* ── Pages ───────────────────────────────────────────────────── */
+/* ── Pages ── */
 .page{display:none;}
 .page.active{display:block;}
 
-/* ── Navigation ─────────────────────────────────────────────── */
+/* ── Navigation ── */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;transition:background .3s,box-shadow .3s;background:rgba(250,250,250,0.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid transparent}
 #navbar.scrolled{border-bottom-color:var(--border);box-shadow:var(--shadow)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%}
@@ -80,7 +80,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
 
-/* ── Hero ─────────────────────────────────────────────────────── */
+/* ── Hero ──  */
 #page-home .hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding-top:calc(var(--nav-h) + 60px);padding-bottom:80px}
 .hero-left .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:24px}
 .eyebrow-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse-dot 2s infinite}
@@ -120,7 +120,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .chip-2{bottom:130px;right:-30px;animation-delay:-2.5s}
 .chip-3{top:160px;left:-10px;animation-delay:-.8s}
 
-/* ── Services ─────────────────────────────────────────────────── */
+/* ── Services ── */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-top:60px}
 .service-card{background:var(--white);padding:40px;transition:background .25s;cursor:pointer;position:relative;overflow:hidden}
 .service-card::after{content:'';position:absolute;inset:0;background:var(--ink);opacity:0;transition:.3s}
@@ -131,7 +131,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .sc-desc{font-size:.88rem;color:var(--ink2);line-height:1.7}
 .sc-arrow{display:inline-flex;margin-top:20px;font-size:1.1rem;transition:.25s}
 
-/* ── Metrics ─────────────────────────────────────────────────── */
+/* ── Metrics ── */
 .metrics-section{background:var(--ink)}
 .metrics-section .section-header{color:var(--white)}
 .metrics-section .section-header .tag{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.07)}
@@ -143,7 +143,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .metric-suffix{color:var(--accent);display:inline}
 .metric-label{font-size:.82rem;color:rgba(255,255,255,.45);margin-top:10px;letter-spacing:.04em}
 
-/* ── Portfolio ─────────────────────────────────────────────────── */
+/* ── Portfolio ── */
 .portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:60px}
 .portfolio-card{border-radius:var(--radius-lg);overflow:hidden;position:relative;cursor:pointer;background:var(--surface)}
 .portfolio-card:first-child{grid-row:span 2}
@@ -157,7 +157,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .kpi{font-family:var(--font-display);font-size:.75rem;color:rgba(255,255,255,.7)}
 .kpi strong{color:#fff;font-weight:700}
 
-/* ── Testimonials ─────────────────────────────────────────────── */
+/* ── Testimonials ── */
 .testimonials-track-wrap{overflow:hidden;margin-top:60px;position:relative}
 .testimonials-track{display:flex;gap:24px;transition:transform .55s cubic-bezier(.4,0,.2,1)}
 .tcard{flex:0 0 380px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px;position:relative}
@@ -175,7 +175,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .dot{width:6px;height:6px;border-radius:50%;background:var(--border2);cursor:pointer;transition:.2s}
 .dot.active{background:var(--ink);width:20px;border-radius:3px}
 
-/* ── CTA Banner ───────────────────────────────────────────────── */
+/* ── CTA Banner ── */
 .cta-banner{background:var(--ink);border-radius:var(--radius-lg);padding:clamp(56px,8vw,96px) clamp(40px,6vw,80px);display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative;overflow:hidden}
 .cta-banner::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:var(--accent);opacity:.08}
 .cta-banner::after{content:'';position:absolute;bottom:-80px;left:10%;width:200px;height:200px;border-radius:50%;background:var(--accent);opacity:.05}
@@ -183,7 +183,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .cta-banner h2 em{font-style:normal;color:var(--accent)}
 .cta-banner-actions{flex:0 0 auto;display:flex;gap:14px;flex-wrap:wrap}
 
-/* ── About ─────────────────────────────────────────────────────── */
+/* ── About ── */
 .about-hero{padding-top:calc(var(--nav-h) + 80px);padding-bottom:80px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .about-story{font-size:1rem;color:var(--ink2);line-height:1.85}
 .mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
@@ -200,7 +200,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .about-image-placeholder{border-radius:var(--radius-lg);background:var(--surface);overflow:hidden;height:480px;display:flex;align-items:center;justify-content:center;position:relative}
 .about-blob{position:absolute;width:340px;height:340px;border-radius:50%;background:linear-gradient(135deg,rgba(28,110,242,.12),rgba(28,110,242,.03));animation:float-core 7s ease-in-out infinite}
 
-/* ── Services page ─────────────────────────────────────────────── */
+/* ── Services page ── */
 .services-page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;margin-top:60px}
 .sp-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s;cursor:pointer}
 .sp-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
@@ -212,7 +212,7 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .sp-features li{font-size:.82rem;color:var(--ink2);display:flex;align-items:center;gap:8px}
 .sp-features li::before{content:'→';color:var(--accent);font-weight:700;font-family:var(--font-display)}
 
-/* ── Portfolio page ─────────────────────────────────────────────── */
+/* ── Portfolio page ── */
 .portfolio-page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;margin-top:60px}
 .pp-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;transition:transform .25s,box-shadow .25s}
 .pp-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
@@ -226,10 +226,10 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .pp-kpi .val{font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--ink)}
 .pp-kpi .lbl{font-size:.7rem;color:var(--ink3)}
 
-/* ── Testimonials page ─────────────────────────────────────────── */
+/* ── Testimonials page ── */
 .tpage-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;margin-top:60px}
 
-/* ── Login ─────────────────────────────────────────────────────── */
+/* ── Login ─── */
 #page-login{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:clamp(80px,10vw,120px) 20px;}
 .login-card{width:100%;max-width:440px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(40px,6vw,56px);box-shadow:var(--shadow-lg)}
 .login-logo{display:flex;justify-content:center;margin-bottom:32px}
@@ -253,14 +253,14 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .btn-social:hover{border-color:var(--ink);background:var(--surface)}
 .login-footer{text-align:center;font-size:.82rem;color:var(--ink3);margin-top:28px}
 
-/* ── Section headers ─────────────────────────────────────────── */
+/* ── Section headers ── */
 .section-header{text-align:center;margin-bottom:10px}
 .section-header h2{margin-bottom:16px}
 .section-header p{max-width:560px;margin-inline:auto}
 .section-header-left{text-align:left;margin-bottom:10px}
 .section-header-left p{max-width:560px}
 
-/* ── Scroll animations ─────────────────────────────────────────── */
+/* ── Scroll animations ─ */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
 .reveal.visible{opacity:1;transform:none}
 .reveal-stagger>*{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
@@ -272,19 +272,19 @@ p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink2);line-height:1.75;fon
 .reveal-stagger.visible>*:nth-child(5){transition-delay:.45s}
 .reveal-stagger.visible>*:nth-child(6){transition-delay:.55s}
 
-/* ── Mobile menu ─────────────────────────────────────────────── */
+/* ── Mobile menu ─── */
 .mobile-menu{position:fixed;inset:0;background:var(--white);z-index:999;display:flex;flex-direction:column;padding:calc(var(--nav-h) + 24px) 32px 40px;gap:8px;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
 .mobile-menu.open{transform:none}
 .mobile-menu a{font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--ink);padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer}
 
-/* ── Misc elements ─────────────────────────────────────────────── */
+/* ── Misc elements ─── */
 .badge{display:inline-block;padding:3px 10px;border-radius:100px;font-size:.7rem;font-weight:700;letter-spacing:.05em}
 .breadcrumb{font-size:.8rem;color:var(--ink3);margin-bottom:24px}
 .breadcrumb span{color:var(--ink2)}
 .page-hero{padding-top:calc(var(--nav-h) + 80px);padding-bottom:60px;border-bottom:1px solid var(--border)}
 .divider{height:1px;background:var(--border);margin-block:0}
 
-/* ── Footer ─────────────────────────────────────────────────────── */
+/* ── Footer ─── */
 footer{background:var(--ink);padding:80px 0 40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:64px}
 .footer-brand p{color:rgba(255,255,255,.45);font-size:.85rem;margin-top:16px;max-width:280px;line-height:1.75}
@@ -294,7 +294,7 @@ footer{background:var(--ink);padding:80px 0 40px}
 .footer-col a:hover{color:rgba(255,255,255,.85)}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:32px;border-top:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.3);font-size:.78rem;flex-wrap:wrap;gap:16px}
 
-/* ── Responsive ─────────────────────────────────────────────────── */
+/* ── Responsive ─── */
 @media(max-width:900px){
   #page-home .hero{grid-template-columns:1fr;gap:60px}
   .hero-right{height:380px;order:-1}
@@ -323,7 +323,7 @@ footer{background:var(--ink);padding:80px 0 40px}
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────────── -->
+<!-- ── Navigation ─── -->
 <nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
     <div class="logo" onclick="showPage('home')">
